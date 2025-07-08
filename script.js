@@ -21,7 +21,7 @@ function drawCanvas() {
 
 function loadByTokenId(tokenId) {
   const paddedId = tokenId.padStart(3, '0');
-  const imageUrl = `assets/prime8s/${paddedId}.png`;
+  const imageUrl = `assets/prime8s/${paddedId}.webp`;
 
   baseImage = new Image();
   baseImage.crossOrigin = 'anonymous';
