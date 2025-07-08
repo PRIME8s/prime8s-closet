@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prime8s CLOSET</title>
+  <title>Prime8s Multi-Accessory Customizer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Prime8s CLOSET</h1>
+    <h1>PRIME8s CLOSET</h1>
 
     <canvas id="canvas" width="600" height="600"></canvas>
 
@@ -16,11 +16,25 @@
       <input type="number" id="tokenIdInput" placeholder="Enter Token ID (e.g. 123)" />
       <button id="fetchBtn">Load Prime8</button>
 
+      <label>Headgear:</label>
+      <select id="headgearSelector">
+        <option value="">None</option>
+        <option value="assets/accessories/hat.png">Hat</option>
+        <option value="assets/accessories/crown.png">Crown</option>
+      </select>
+
       <label>Item:</label>
       <select id="handSelector">
         <option value="">None</option>
         <option value="assets/accessories/banana.png">Banana</option>
         <option value="assets/accessories/taco1.png">Taco</option>
+      </select>
+
+      <label>Effect:</label>
+      <select id="effectSelector">
+        <option value="">None</option>
+        <option value="assets/accessories/glow.png">Glow</option>
+        <option value="assets/accessories/flames.png">Flames</option>
       </select>
 
       <button id="downloadBtn">Download PNG</button>
