@@ -9,6 +9,8 @@ const headgearSelector = document.getElementById('headgearSelector');
 const handSelector = document.getElementById('handSelector');
 const effectSelector = document.getElementById('effectSelector');
 
+let backgroundImage = new Image();
+let FurImage = new Image();
 let baseImage = new Image();
 let headgearImg = new Image();
 let handImg = new Image();
@@ -37,6 +39,22 @@ fetchBtn.addEventListener('click', () => {
   const tokenId = tokenIdInput.value.trim();
   if (!tokenId) return alert('Please enter a token ID');
   loadByTokenId(tokenId);
+});
+
+headgearSelector.addEventListener('change', () => {
+  BackgroundImg = new Image();
+  BackgroundImg.onload = drawCanvas;
+  BackgroundImg.src = headgearSelector.value;
+});
+
+});
+
+headgearSelector.addEventListener('change', () => {
+  FurImg = new Image();
+  FurImg.onload = drawCanvas;
+  FurImg.src = headgearSelector.value;
+});
+
 });
 
 headgearSelector.addEventListener('change', () => {
